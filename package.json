@@ -1,0 +1,24 @@
+{
+  "name": "MS_packages",
+  "version": "2015.12.09",
+  "dependencies": {
+    "gulp": "latest",
+    "gulp-bower": "latest",
+    "gulp-concat": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "1.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-connect-php": "0.0.7",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-filter": "^4.0.0",
+    "gulp-print": "^2.0.1",
+    "main-bower-files": "^2.13.1"
+  }
+}
