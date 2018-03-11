@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/prod.css" rel="stylesheet"/>
 </head>
+
 <body>
 <header>
     <div class="menu-up">
@@ -20,8 +21,8 @@
         <div class="logo">
             <h1>The Site</h1>
         </div>
-        <div class="menu">
 
+        <div class="menu">
             <div class="menu-down">
                 <div class="dropdown-container">
                     <div class="dropbtn">menu link</div>
@@ -62,8 +63,6 @@
                         <a href="#">Nec neque fringilla </a>
                     </div>
                 </div>
-
-
             </div>
 
             <div id="nav-icon">
@@ -72,10 +71,10 @@
                 <span></span>
                 <span></span>
             </div>
-
         </div>
     </nav>
 </header>
+
 <main>
     <section class="main-content">
         <div class="main-post">
@@ -125,12 +124,12 @@
             </div>
             <form>
                 <label for="firstname">First name:</label>
-                <input id="firstname" required type="text" name="firstname" placeholder="Enter your name">
+                <input maxlength="50" id="firstname" required type="text" name="firstname" placeholder="Enter your name">
                 <label for="lastname">Last name:</label>
-                <input id="lastname" required type="text" name="lastname" placeholder="Enter your last name">
+                <input maxlength="50" id="lastname" required type="text" name="lastname" placeholder="Enter your last name">
                 <label for="message">Message:</label>
-                <textarea id="message" required name="message"></textarea>
-                <input type="submit" value="Submit">
+                <textarea maxlength="600" id="message" required name="message"></textarea>
+                <input id="submit" type="submit" value="Submit">
             </form>
         </div>
     </aside>
@@ -161,6 +160,7 @@
         </div>
     </section>
 </main>
+
 <footer>
     <div class="footer-container">
         <div class="footer-links">
@@ -187,6 +187,7 @@
         </div>
     </div>
 </footer>
+
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/prod.js" defer></script>
 </body>

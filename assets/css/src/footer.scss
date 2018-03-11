@@ -1,0 +1,72 @@
+footer {
+  background-color: #666666;
+  .footer-container {
+    width: 1147px;
+    margin: auto;
+    padding: 20px 90px;
+    @include breakpoint(max-width $BR-C) {
+      width: 100%;
+    }
+    @include breakpoint(max-width $BR-L) {
+      padding: 20px 40px;
+    }
+    @include breakpoint(max-width $BR-T) {
+      padding: 20px;
+    }
+    .footer-links {
+      ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        li {
+
+          border-right: 1px solid white;
+          font-size: 12px;
+          padding: 0 10px 0 0;
+          margin-right: 10px;
+          margin-bottom: 5px;
+          &:first-of-type {
+            padding: 0 10px 0 0;
+          }
+          &:last-of-type {
+            border-right: none;
+          }
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+    .footer-disclaimer {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      @include breakpoint(max-width $BR-T) {
+        flex-direction: column;
+      }
+      .footer-content {
+        width: calc(100% - 150px);
+        font-size: 12px;
+        color: #b3b3b3;
+        @include breakpoint(max-width $BR-T) {
+          width: 100%;
+        }
+
+      }
+      .footer-logo {
+        width: 150px;
+        text-align: right;
+        color: white;
+        align-self: flex-end;
+        font-weight: bold;
+        font-size: 31.15px;
+        @include breakpoint(max-width $BR-T) {
+          margin-top: 20px;
+          width: 100%;
+          align-self: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

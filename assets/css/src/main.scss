@@ -1,0 +1,210 @@
+main {
+  width: 1147px;
+  margin: 40px auto 25px auto;
+  padding: 0 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include breakpoint(max-width $BR-C) {
+    width: 100%;
+  }
+  @include breakpoint(max-width $BR-L) {
+    padding: 0 20px;
+  }
+  @include breakpoint(max-width $BR-T) {
+    flex-direction: column;
+  }
+
+  .post-title {
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    color: $black;
+    font-size: 37.49px;
+    padding-bottom: 25px;
+    font-weight: bold;
+    &.small {
+      font-size: 24px;
+      padding-bottom: 17px;
+    }
+  }
+  .post-content {
+    color: $grey;
+    font-size: 14px;
+    padding-bottom: 30px;
+    line-height: 1.5;
+    &.small {
+      padding-bottom: 0;
+    }
+  }
+
+  .post-link {
+    border-bottom: 1px solid $grey;
+    padding: 8px 0;
+    a {
+      color: $blue;
+      font-size: 14px;
+    }
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  .main-content {
+    width: 728px;
+    @include breakpoint(max-width $BR-C) {
+      width: 64%;
+    }
+    @include breakpoint(max-width $BR-T) {
+      width: 100%;
+    }
+  }
+
+  .main-post {
+    padding: 20px;
+    background-color: white;
+    margin: 0 0 20px 20px;
+    @include breakpoint(max-width $BR-T) {
+      margin: 0 0 20px 0;
+    }
+  }
+  .add-posts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    @include breakpoint(max-width 991px) {
+      flex-direction: column;
+    }
+    @include breakpoint(max-width $BR-T) {
+      margin: 0 0 20px 0;
+    }
+
+    .post {
+      width: calc(50% - 12.5px);
+      background-color: white;
+      padding: 20px;
+      @include breakpoint(max-width 991px) {
+        margin-bottom: 25px;
+        width: 100%;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  aside {
+    width: calc(100% - 728px);
+    @include breakpoint(max-width $BR-C) {
+      width: 36%;
+    }
+    @include breakpoint(max-width $BR-T) {
+      width: 100%;
+    }
+  }
+
+  .form {
+    padding: 0 20px 20px 20px;
+    @include breakpoint(max-width $BR-T) {
+      padding: 0;
+    }
+    .form-container {
+      @include breakpoint(max-width $BR-T) {
+        padding-right: 20px;
+        width: 50%;
+      }
+      @include breakpoint(max-width 600px) {
+        width: 100%;
+      }
+      .form-title {
+        border-bottom: 2px solid black;
+      }
+      .form-content {
+        padding-top: 15px;
+        padding-bottom: 30px;
+      }
+    }
+    @include breakpoint(max-width $BR-T) {
+      display: flex;
+      flex-direction: row;
+    }
+    @include breakpoint(max-width 600px) {
+      flex-direction: column;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #898989;
+      padding: 20px;
+      @include breakpoint(max-width $BR-T) {
+        width: 50%;
+      }
+      @include breakpoint(max-width 600px) {
+        width: 100%;
+      }
+
+      label {
+        color: #010101;
+        font-size: 14px;
+        padding-bottom: 10px;
+      }
+      input[type="text"] {
+        height: 30px;
+        padding-left: 12px;
+        border: 1px solid #898989;
+        margin-bottom: 20px;
+      }
+      textarea {
+        resize: none;
+        height: 130px;
+        border: 1px solid #898989;
+        padding: 10px 12px;
+        font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+      }
+      input[type="submit"] {
+        cursor: pointer;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        margin-top: 20px;
+        background-color: $pink;
+        color: white;
+        border: none;
+        outline: none;
+        text-transform: uppercase;
+        height: 35px;
+        width: 110px;
+        transition: background-color .3s ease;
+        &:hover {
+          background-color: #ff77be;
+        }
+      }
+    }
+  }
+
+  section {
+    width: 1147px;
+    @include breakpoint(max-width $BR-C) {
+      width: 100%;
+    }
+    .side-posts {
+
+      margin: 20px 0 0 20px;
+      display: flex;
+      width: calc(100% - 40px);
+      flex-direction: row;
+      flex-grow: 1;
+      background-color: #cccccc;
+      align-self: stretch;
+      @include breakpoint(max-width $BR-T) {
+        flex-wrap: wrap;
+        margin: 20px 0 0 0;
+        width: 100%;
+        justify-content: space-around;
+      }
+      .post {
+        padding: 20px;
+      }
+    }
+  }
+}
+

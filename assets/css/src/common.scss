@@ -1,0 +1,23 @@
+//colors
+$pink: #d3135a;
+$black: #000000;
+$grey: #4d4d4d;
+$blue: #0071bc;
+
+/*breakpoints*/
+$BR-LL: 1440px;
+$BR-C: 1147px;
+$BR-L: 1024px;
+$BR-I: 991px;
+$BR-T: 768px;
+$BR-ML: 425px;
+$BR-MM: 375px;
+$BR-MS: 320px;
+
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  background-color: #e6e6e6;
+}
