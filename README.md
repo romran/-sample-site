@@ -1,4 +1,4 @@
-Sample Site front-end mock up with Gulp. [DEMO](https://github.com/facebookincubator/create-react-app) 
+Sample Site front-end mock up boilerplate with Gulp. [DEMO](http://htmlpreview.github.io/?https://github.com/romran/sample-site/blob/master/index.html) 
 
 Quick setup:
 
