@@ -1,6 +1,5 @@
 {
-  "name": "MS_packages",
-  "version": "2015.12.09",
+  "name": "sample-site",
   "dependencies": {
     "gulp": "latest",
     "gulp-bower": "latest",
@@ -10,7 +9,7 @@
     "gulp-rename": "latest",
     "gulp-sass": "latest",
     "gulp-sourcemaps": "latest",
-    "gulp-uglify": "1.1.0"
+    "gulp-uglify": "latest"
   },
   "devDependencies": {
     "browser-sync": "latest",
