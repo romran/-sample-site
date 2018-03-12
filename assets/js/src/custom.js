@@ -34,22 +34,21 @@ $(document).ready(function () {
         }
     }).trigger('resize');
 
-    $("#submit").click(function () {
-        if ($("#lastname").val().match('^[a-zA-Z]')) {
-            $("#lastname").css("border", "none")
-        }
-        else {
-            $("#lastname").css("border", "1px solid red");
-            alert("Last name consists invalid characters");
-        }
 
-        if ($("#firstname").val().match('^[a-zA-Z]')) {
-            $("#firstname").css("border", "none")
-        }
-        else {
-            $("#firstname").css("border", "1px solid red");
-            alert("First name consists invalid characters");
-        }
+    $("#firstname").keyup(function (e) {
+        var regex = /^[a-zA-Z]+$/;
+        if (regex.test(this.value) !== true)
+            this.value = this.value.replace(/[^a-zA-Z]+/, '');
+    });
+
+    $("#lastname").keyup(function (e) {
+        var regex = /^[a-zA-Z]+$/;
+        if (regex.test(this.value) !== true)
+            this.value = this.value.replace(/[^a-zA-Z]+/, '');
+    });
+
+    $('#submit').on('click', function () {
+        $("#message").val($.trim($("#message").val()));
     });
 
     function getIEVersion() {

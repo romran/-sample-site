@@ -1,4 +1,4 @@
-####Sample Site frontend mock-up boilerplate with Gulp. 
+###Sample Site frontend mock-up boilerplate with Gulp. 
 
 [DEMO](http://htmlpreview.github.io/?https://github.com/romran/sample-site/blob/master/index.html) 
 
@@ -10,7 +10,7 @@ Quick setup:
 
 `gulp` will open Sample Site in http://localhost:3000/ 
 
-Run gulp tasks to compile vendor.js and vendor.css files if needed. 
+Run `gulp <task name>` tasks to compile `vendor.js` and `vendor.css` files if needed. 
 
  
 
