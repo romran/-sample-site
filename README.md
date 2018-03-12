@@ -1,4 +1,4 @@
-#### Sample Site frontend mock-up boilerplate with Gulp. 
+### Sample Site frontend mock-up boilerplate with Gulp. 
 
 [DEMO](http://htmlpreview.github.io/?https://github.com/romran/sample-site/blob/master/index.html) 
 
