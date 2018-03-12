@@ -178,7 +178,7 @@ main {
         width: 110px;
         transition: background-color .3s ease;
         &:hover {
-          background-color: #ff77be;
+          background-color: $hover-pink;
         }
       }
     }
