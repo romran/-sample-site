@@ -34,17 +34,12 @@ $(document).ready(function () {
         }
     }).trigger('resize');
 
-
-    $("#firstname").keyup(function (e) {
-        var regex = /^[a-zA-Z]+$/;
-        if (regex.test(this.value) !== true)
-            this.value = this.value.replace(/[^a-zA-Z]+/, '');
-    });
-
-    $("#lastname").keyup(function (e) {
-        var regex = /^[a-zA-Z]+$/;
-        if (regex.test(this.value) !== true)
-            this.value = this.value.replace(/[^a-zA-Z]+/, '');
+    $('#form *').filter(':input').each(function(){
+        $(this).keyup(function (e) {
+            var regex = /^[a-zA-Z]+$/;
+            if (regex.test(this.value) !== true)
+                this.value = this.value.replace(/[^a-zA-Z]+/, '');
+        });
     });
 
     $('#submit').on('click', function () {
@@ -70,7 +65,6 @@ $(document).ready(function () {
             }
         }
     }
-
     checkVersion()
 });
 

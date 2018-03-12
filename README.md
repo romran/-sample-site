@@ -2,15 +2,15 @@
 
 [DEMO](http://htmlpreview.github.io/?https://github.com/romran/sample-site/blob/master/index.html) 
 
-Quick setup:
+#### Quick setup:
 
 `npm install` to set up dependencies
 
-`bower install` to install JS libraries
+`bower install` to install JS libraries or plugins
 
 `gulp` will open Sample Site in http://localhost:3000/ 
 
-Run `gulp <task name>` tasks to compile `vendor.js` and `vendor.css` files if needed. 
+Run `gulp vendor:js` and `gulp vendor:css` after every Bower module installation.  
 
  
 
