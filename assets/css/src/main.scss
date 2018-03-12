@@ -17,10 +17,11 @@ main {
   }
 
   .post-title {
-    font-family: "TNR-Bold", Tahoma, sans-serif;
+    font-family: "Times New Roman", "TNR-Bold", Tahoma, sans-serif;
     color: $black;
     font-size: 37.49px;
     padding-bottom: 25px;
+    font-weight: bold;
     &.small {
       font-size: 24px;
       padding-bottom: 17px;
@@ -159,7 +160,7 @@ main {
         height: 130px;
         border: 1px solid #898989;
         padding: 10px 12px;
-        font-family: "TrebuchetMS", Tahoma, sans-serif;
+        font-family: "TrebuchetMS", "Trebuchet MS", Tahoma, sans-serif;
         overflow: auto;
         font-size: 14px;
       }
