@@ -144,21 +144,21 @@ main {
       }
 
       label {
-        color: #010101;
+        color: $label-color;
         font-size: 14px;
         padding-bottom: 10px;
       }
       input[type="text"] {
         height: 30px;
         padding-left: 12px;
-        border: 1px solid #898989;
+        border: 1px solid $input-border;
         margin-bottom: 20px;
         font-size: 14px;
       }
       textarea {
         resize: none;
         height: 130px;
-        border: 1px solid #898989;
+        border: 1px solid $input-border;
         padding: 10px 12px;
         font-family: "Trebuchet MS", "TrebuchetMS", Tahoma, sans-serif;
         overflow: auto;
@@ -196,7 +196,7 @@ main {
       width: calc(100% - 40px);
       flex-direction: row;
       flex-grow: 1;
-      background-color: #cccccc;
+      background-color: $section-bg;
       align-self: stretch;
       @include breakpoint(max-width $BR-T) {
         flex-wrap: wrap;

@@ -3,7 +3,13 @@ $pink: #d3135a;
 $hover-pink: #ff5abd;
 $black: #000000;
 $grey: #4d4d4d;
+$light-grey: #666666;
 $blue: #0071bc;
+$label-color: #010101;
+$input-border: #898989;
+$section-bg: #cccccc;
+$body-bg: #e6e6e6;
+$footer-color: #b3b3b3;
 
 //breakpoints
 $BR-LL: 1440px;
@@ -19,7 +25,7 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: "Trebuchet MS", "TrebuchetMS", Tahoma, sans-serif;
-  background-color: #e6e6e6;
+  background-color: $body-bg;
 }
 
 //fonts

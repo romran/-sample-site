@@ -1,5 +1,5 @@
 footer {
-  background-color: #666666;
+  background-color: $light-grey;
   .footer-container {
     width: 1147px;
     margin: auto;
@@ -47,7 +47,7 @@ footer {
       .footer-content {
         width: calc(100% - 150px);
         font-size: 12px;
-        color: #b3b3b3;
+        color: $footer-color;
         @include breakpoint(max-width $BR-T) {
           width: 100%;
         }

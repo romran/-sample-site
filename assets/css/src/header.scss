@@ -110,7 +110,7 @@ header {
           .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #4d4d4d;
+            background-color: $grey;
             color: white;
             z-index: 1;
             top: calc(100% + 10px);
@@ -128,7 +128,7 @@ header {
               display: block;
               width: 14px;
               height: 14px;
-              background-color: #4d4d4d;
+              background-color: $grey;
               top: -7px;
               left: calc(50% - 7px);
               transform: rotate(45deg);
@@ -145,7 +145,7 @@ header {
               white-space: nowrap;
               width: 100%;
               &:hover {
-                background-color: #666666;
+                background-color: $light-grey;
               }
             }
           }
