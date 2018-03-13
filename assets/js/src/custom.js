@@ -8,6 +8,20 @@ $(document).ready(function () {
         $(this).next().toggleClass("show")
     });
 
+
+    //Dropdown menu for accessibility
+    $('.dropbtn').keypress(function (e) {
+        var key = e.which;
+        if(key == 13)  // the enter key code
+        {
+            $(".dropdown-content").removeClass("show");
+            $(".dropbtn").css("color", "white");
+            $(this).css("color", "#333333");
+            $(this).next().toggleClass("show")
+        }
+    });
+
+
     //Close dropdown menu when clicking outside
     window.onclick = function (event) {
         if (!$(event.target).hasClass('dropbtn')) {

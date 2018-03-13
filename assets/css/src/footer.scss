@@ -56,10 +56,12 @@ footer {
       .footer-logo {
         width: 150px;
         text-align: right;
-        color: white;
         align-self: flex-end;
         font-weight: bold;
         font-size: 31.15px;
+        a {
+          color: white;
+        }
         @include breakpoint(max-width $BR-T) {
           margin-top: 20px;
           width: 100%;

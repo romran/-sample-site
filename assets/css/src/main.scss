@@ -171,12 +171,14 @@ main {
         margin-top: 20px;
         background-color: $pink;
         color: white;
-        border: none;
-        outline: none;
+        border: 1px solid transparent;
         text-transform: uppercase;
         height: 35px;
         width: 110px;
         transition: background-color .3s ease;
+        &:focus {
+          outline: 1px solid #32a1ce;;
+        }
         &:hover {
           background-color: $hover-pink;
         }

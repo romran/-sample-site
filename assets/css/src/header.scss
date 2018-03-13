@@ -52,7 +52,6 @@ header {
     align-items: flex-end;
 
     .logo {
-      color: $logo-color;
       line-height: 50px;
       min-height: 50px;
       font-size: 59.63px;
@@ -61,6 +60,9 @@ header {
         font-size: 42px;
         line-height: 40px;
         min-height: 40px;
+      }
+      a {
+        color: $logo-color;
       }
     }
     .menu {
