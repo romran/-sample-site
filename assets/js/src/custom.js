@@ -23,9 +23,19 @@ $(document).ready(function () {
             $('.menu-down').addClass("show")
         }
         else {
-            $('.menu-down').removeClass("show")
+            $('.menu-down').removeClass("show");
         }
     });
+
+    //Add transition only when hamburger is visible
+    $(window).on('resize', function () {
+        if ($('#nav-icon').css('display') == 'none') {
+            $('.menu-down').css("transition", "none");
+        }
+        else {
+            $('.menu-down').css("transition", "all 0.3s ease");
+        }
+    }).trigger('resize');
 
     //Change position of the last dropdown menu
     $(window).on('resize', function () {
