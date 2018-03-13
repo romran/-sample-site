@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    //Dropdown menu
     $(".dropbtn").click(function () {
         $(".dropdown-content").removeClass("show");
         $(".dropbtn").css("color", "white");
@@ -7,6 +8,7 @@ $(document).ready(function () {
         $(this).next().toggleClass("show")
     });
 
+    //Close dropdown menu when clicking outside
     window.onclick = function (event) {
         if (!$(event.target).hasClass('dropbtn')) {
             $(".dropbtn").css("color", "white");
@@ -14,6 +16,7 @@ $(document).ready(function () {
         }
     };
 
+    //Hamburger
     $('#nav-icon').click(function () {
         $(this).toggleClass('open');
         if ($("#nav-icon").hasClass("open")) {
@@ -24,6 +27,7 @@ $(document).ready(function () {
         }
     });
 
+    //Change position of the last dropdown menu
     $(window).on('resize', function () {
         var width = $(window).width();
         if (width <= 1024 && width >= 767) {
@@ -34,18 +38,24 @@ $(document).ready(function () {
         }
     }).trigger('resize');
 
-    $('#form *').filter(':input').each(function(){
+    //Form validation
+    var inputs = $('input');
+
+    $(inputs).each(function () {
         $(this).keyup(function (e) {
-            var regex = /^[a-zA-Z]+$/;
+            var regex = /^[a-zA-Z_ ]+$/;
             if (regex.test(this.value) !== true)
-                this.value = this.value.replace(/[^a-zA-Z]+/, '');
+                this.value = this.value.replace(/[^a-zA-Z_ ]+/, '');
         });
     });
 
     $('#submit').on('click', function () {
-        $("#message").val($.trim($("#message").val()));
+        $('#form *').filter(':input').each(function () {
+            $(this).val($.trim($(this).val()));
+        });
     });
 
+    //Notification if user uses IE 10 or older version
     function getIEVersion() {
         var rv = -1; // Return value assumes failure.
         if (navigator.appName == 'Microsoft Internet Explorer') {
@@ -65,6 +75,7 @@ $(document).ready(function () {
             }
         }
     }
+
     checkVersion()
 });
 
