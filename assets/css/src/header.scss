@@ -123,6 +123,7 @@ header {
             }
 
             &:before {
+              z-index: -1;
               position: absolute;
               content: "";
               display: block;
@@ -140,7 +141,7 @@ header {
             }
             a {
               color: white;
-              padding: 12px;
+              padding: 7.5px 12px;
               display: inline-block;
               white-space: nowrap;
               width: 100%;
@@ -153,8 +154,12 @@ header {
             display: block;
           }
           .move {
-            left: calc(-100% + 30px);
             transform: none;
+            left: 0;
+            width: 100%;
+            a {
+              white-space: normal;
+            }
           }
         }
         &.show {
