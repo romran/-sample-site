@@ -12,13 +12,17 @@ $(document).ready(function () {
     //Dropdown menu for accessibility
     $('.dropbtn').keypress(function (e) {
         var key = e.which;
-        if(key == 13)  // the enter key code
+        if (key == 13)  // the enter key code
         {
             $(".dropdown-content").removeClass("show");
             $(".dropbtn").css("color", "white");
             $(this).css("color", "#333333");
             $(this).next().toggleClass("show")
         }
+    });
+
+    $('.dropdown-content :last-child').on("focusout", function () {
+        $(".dropdown-content").removeClass("show");
     });
 
 
