@@ -136,7 +136,7 @@ header {
               @include breakpoint(max-width 767px) {
                 transform: rotate(45deg);
                 left: calc(100% - 8px);
-                top: 3px;
+                top: calc(0 + 2.5px);
               }
             }
             a {
