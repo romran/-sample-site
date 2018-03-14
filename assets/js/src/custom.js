@@ -23,6 +23,7 @@ $(document).ready(function () {
 
     $('.dropdown-content :last-child').on("focusout", function () {
         $(".dropdown-content").removeClass("show");
+        $(".dropbtn").css("color", "white")
     });
 
 
