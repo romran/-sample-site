@@ -50,6 +50,8 @@ $(document).ready(function () {
     $(window).on('resize', function () {
         if ($('#nav-icon').css('display') == 'none') {
             $('.menu-down').css("transition", "none");
+            $('.menu-down').removeClass("show");
+            $('#nav-icon').removeClass("open");
         }
         else {
             $('.menu-down').css("transition", "all 0.3s ease");
