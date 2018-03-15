@@ -79,7 +79,10 @@ header {
         flex-direction: row;
         justify-content: flex-end;
         margin-right: -10px;
-        @include breakpoint(max-width 767px) {
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          transition: opacity .3s ease !important;
+        }
+         @include breakpoint(max-width 767px) {
           opacity: 0;
           visibility: hidden;
           flex-direction: column;
@@ -113,6 +116,9 @@ header {
             top: calc(100% + 0px);
             @include breakpoint(max-width 767px) {
               transition: opacity 0.3s ease;
+            }
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+              transition: opacity .3s ease;
             }
             position: absolute;
             background-color: $grey;
